@@ -17,7 +17,7 @@ public class WebTestQuestionsAboutImportant {
     public void clickDropdownListHowMath(){
         MainPageQuestionsAboutImportant page = new MainPageQuestionsAboutImportant(driver);
         page.open();
-        page.FindQuestionAbout();
+        page.findQuestionAbout();
         page.clickAboutHowMath();
         page.isDisplayedAnswerHowMath();
         Assert.assertTrue("Ожидание в clickDropdownListHowMath не совпадает",page.isDisplayedAnswerHowMath());
@@ -28,7 +28,7 @@ public class WebTestQuestionsAboutImportant {
     public void clickDropdownListAboutSeveralScooters(){
         MainPageQuestionsAboutImportant page = new MainPageQuestionsAboutImportant(driver);
         page.open();
-        page.FindQuestionAbout();
+        page.findQuestionAbout();
         page.clickAboutSeveralScooters();
         page.isDisplayedAnswerAboutSeveralScooters();
         Assert.assertTrue("Ожидание в clickDropdownListAboutSeveralScooters не совпадает", page.isDisplayedAnswerAboutSeveralScooters());
@@ -39,7 +39,7 @@ public class WebTestQuestionsAboutImportant {
     public void clickDropdownListAboutHowRentalCalculated(){
         MainPageQuestionsAboutImportant page = new MainPageQuestionsAboutImportant(driver);
         page.open();
-        page.FindQuestionAbout();
+        page.findQuestionAbout();
         page.clickAboutHowRentalCalculated();
         page.isDisplayedAnswerHowRentalCalculated();
         Assert.assertTrue("Ожидание clickDropdownListAboutHowRentalCalculated не совпадает", page.isDisplayedAnswerHowRentalCalculated());
@@ -49,7 +49,7 @@ public class WebTestQuestionsAboutImportant {
     public void clickDropdownListAboutOrderScooterToday(){
         MainPageQuestionsAboutImportant page = new MainPageQuestionsAboutImportant(driver);
         page.open();
-        page.FindQuestionAbout();
+        page.findQuestionAbout();
         page.clickAboutOrderScooterToday();
         page.isDisplayedAnswerOrderScooterToday();
         Assert.assertTrue("Ожидание clickDropdownListAboutOrderScooterToday не совпадает", page.isDisplayedAnswerOrderScooterToday());
@@ -59,7 +59,7 @@ public class WebTestQuestionsAboutImportant {
     public void clickDropdownListAboutOrderScooterEarlier(){
         MainPageQuestionsAboutImportant page = new MainPageQuestionsAboutImportant(driver);
         page.open();
-        page.FindQuestionAbout();
+        page.findQuestionAbout();
         page.clickAboutOrderScooterEarlier();
         page.isDisplayedAnswerOrderScooterEarlier();
         Assert.assertTrue("Ожидание clickDropdownListAboutOrderScooterEarlier не совпадает", page.isDisplayedAnswerOrderScooterEarlier());
@@ -69,7 +69,7 @@ public class WebTestQuestionsAboutImportant {
     public void clickDropdownListAboutChargingWithScooter(){
         MainPageQuestionsAboutImportant page = new MainPageQuestionsAboutImportant(driver);
         page.open();
-        page.FindQuestionAbout();
+        page.findQuestionAbout();
         page.clickAboutChargingWithScooter();
         page.isDisplayedAnswerChargingWithScooter();
         Assert.assertTrue("Ожидание clickDropdownListAboutChargingWithScooter не совпадает", page.isDisplayedAnswerChargingWithScooter());
@@ -79,7 +79,7 @@ public class WebTestQuestionsAboutImportant {
     public void clickDropdownListAboutPossibleCancelOrder(){
         MainPageQuestionsAboutImportant page = new MainPageQuestionsAboutImportant(driver);
         page.open();
-        page.FindQuestionAbout();
+        page.findQuestionAbout();
         page.clickAboutPossibleCancelOrder();
         page.isDisplayedAnswerPossibleCancelOrder();
         Assert.assertTrue("Ожидание clickDropdownListAboutPossibleCancelOrder не совпадает",page.isDisplayedAnswerPossibleCancelOrder());
@@ -89,7 +89,7 @@ public class WebTestQuestionsAboutImportant {
     public void clickDropdownListAboutILiveBehindMCAD(){
         MainPageQuestionsAboutImportant page = new MainPageQuestionsAboutImportant(driver);
         page.open();
-        page.FindQuestionAbout();
+        page.findQuestionAbout();
         page.clickAboutILiveBehindMCAD();
         page.isDisplayedAnswerILiveBehindMCAD();
         Assert.assertTrue("Ожидание clickDropdownListAboutILiveBehindMCAD не совпадает",page.isDisplayedAnswerILiveBehindMCAD());

@@ -29,7 +29,7 @@ public class MainPageQuestionsAboutImportant {
     }
 
 
-    public void FindQuestionAbout(){
+    public void findQuestionAbout(){
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         WebElement element = driver.findElement(By.xpath("//div[@class = 'Home_SubHeader__zwi_E'][text()='Вопросы о важном']"));
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", element);

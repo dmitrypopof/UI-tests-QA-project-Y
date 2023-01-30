@@ -5,6 +5,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.time.Duration;
+
 public class MainPageYandexScooter {
     private static final By ORDER_BUTTON_FIRST = By.cssSelector("div.Header_Nav__AGCXC > button.Button_Button__ra12g");  //верхняя кнопка заказать (стартовой страницы)
     private static final By ORDER_BUTTON_DOWN_SCROLL = By.xpath("//button[@class = 'Button_Button__ra12g Button_Middle__1CSJM']"); // кнопка заказать при скролле вниз
@@ -29,7 +31,6 @@ public class MainPageYandexScooter {
         this.driver = driver;
     }
 
-
     public void open(){
         driver.get(PAGE_URL);  // открываем страницу, используя метод get
     }
@@ -47,57 +48,57 @@ public class MainPageYandexScooter {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", element);
     }
 
-    public  String InputNameFolder(String name){
+    public  String inputNameFolder(String name){
         driver.findElement(NAME_FOLDER).clear();
         driver.findElement(NAME_FOLDER).sendKeys(name);
         return name;
     }
 
-    public String InputSurnameFolder(String surname){
+    public String inputSurnameFolder(String surname){
         driver.findElement(SURNAME_FOLDER).clear();
         driver.findElement(SURNAME_FOLDER).sendKeys(surname);
         return surname;
 
     }
 
-    public String InputAddressFolder(String address){
+    public String inputAddressFolder(String address){
         driver.findElement(ADDRESS_ORDER).clear();
         driver.findElement(ADDRESS_ORDER).sendKeys(address);
         return address;
     }
 
-    public void SelectMetro(){
+    public void selectMetro(){
         driver.findElement(SELECT_METRO_PLACEHOLDER).click();
         driver.findElement(STATION_METRO_ROKOSSOVSKY).click();
     }
 
-    public String InputPhoneNumber(String number){
+    public String inputPhoneNumber(String number){
         driver.findElement(PHONE_NUMBER).clear();
         driver.findElement(PHONE_NUMBER).sendKeys(number);
         return number;
     }
 
-    public void PressButtonNext(){
+    public void pressButtonNext(){
         driver.findElement(NEXT_BUTTON).click();
     }
 
-    public String InputDate(String date){
+    public String inputDate(String date){
         driver.findElement(DATE_SELECT).clear();
         driver.findElement(DATE_SELECT).sendKeys(date);
         driver.findElement(DATE_SELECT).click();
         return date;
     }
 
-    public void SelectColor(){
+    public void selectColor(){
         driver.findElement(SELECT_COLOR_TRANSPORT).click();
     }
 
-    public void SelectRentalPeriod(){
+    public void selectRentalPeriod(){
         driver.findElement(RENTAL_FIELD_PLACEHOLDER).click();
         driver.findElement(RENTAL_PERIOD_ONE_DAY).click();
     }
 
-    public String WriteComment(String comment){
+    public String writeComment(String comment){
         driver.findElement(COMMENT_ORDER).clear();
         driver.findElement(COMMENT_ORDER).sendKeys(comment);
         return comment;
